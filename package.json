@@ -1,19 +1,15 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "react-scripts": "4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +30,35 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "peerDependencies": {
+    "formiojs": "^4.12.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "@webpack-cli/init": "^1.0.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.15.0",
+    "eslint-plugin-react": "^7.21.5",
+    "node-sass": "^4.0.0",
+    "prettier": "^2.2.1",
+    "react-formio": "^4.3.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "web-vitals": "^0.2.4",
+    "webpack": "4.44.2",
+    "webpack-cli": "^4.2.0"
+  },
+  "description": "My webpack project"
 }
